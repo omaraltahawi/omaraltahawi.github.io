@@ -1,0 +1,70 @@
+# ─────────────────────────────────────────────────────────────
+#  Design gallery. One entry per artwork, shown in this order.
+#
+#  To add a piece:
+#   1. Upload the image to  assets/images/artwork/
+#   2. Copy one block below and change the values.
+#
+#  file:      the image file name (exactly as uploaded)
+#  title:     shown under the image
+#  year:      when you made it
+#  medium:    optional, e.g. "Illustrator", "Gouache on paper"
+#  category:  used for the filter buttons (e.g. Poster, Illustration, Branding)
+#  featured:  true = also show it on the home page (up to 6)
+# ─────────────────────────────────────────────────────────────
+
+- file: orbit.svg
+  title: Orbit
+  year: 2026
+  medium: Vector illustration
+  category: Illustration
+  featured: true
+
+- file: type-poster.svg
+  title: Less but more
+  year: 2026
+  medium: Typographic poster
+  category: Poster
+  featured: true
+
+- file: split-sun.svg
+  title: Split Sun
+  year: 2025
+  medium: Screen print study
+  category: Poster
+  featured: true
+
+- file: mark-study.svg
+  title: Mark Study No. 3
+  year: 2025
+  medium: Logo exploration
+  category: Branding
+  featured: true
+
+- file: stack.svg
+  title: Stack
+  year: 2025
+  medium: Vector illustration
+  category: Illustration
+  featured: true
+
+- file: grid-bloom.svg
+  title: Grid Bloom
+  year: 2024
+  medium: Generative pattern
+  category: Pattern
+  featured: true
+
+- file: arches.svg
+  title: Arches
+  year: 2024
+  medium: Vector illustration
+  category: Illustration
+  featured: false
+
+- file: wave-lines.svg
+  title: Wave Lines
+  year: 2024
+  medium: Pattern study
+  category: Pattern
+  featured: false

@@ -1,0 +1,21 @@
+---
+layout: page
+title: Design
+accent: coral
+eyebrow: Design
+heading: Graphics &amp; illustration.
+heading_muted: The side that keeps the other side honest.
+intro: Posters, identities, illustrations and experiments. Click any piece to see it larger.
+---
+{% assign categories = site.data.artwork | map: "category" | uniq | sort %}
+
+<div class="filter-bar" role="group" aria-label="Filter artwork" data-filter-target="#art-grid">
+  <button class="pill-filter" type="button" data-filter="all" aria-pressed="true">All</button>
+  {% for c in categories %}<button class="pill-filter" type="button" data-filter="{{ c | downcase }}" aria-pressed="false">{{ c }}</button>{% endfor %}
+</div>
+
+<div class="masonry" id="art-grid" data-lightbox>
+  {% for art in site.data.artwork %}{% include artwork-tile.html art=art %}{% endfor %}
+</div>
+
+{% include lightbox.html %}

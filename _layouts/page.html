@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="page-hero wrap">
+  {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+  <h1 class="display">{{ page.heading | default: page.title }}{% if page.heading_muted %} <span class="display-muted">{{ page.heading_muted }}</span>{% endif %}</h1>
+  {% if page.intro %}<p class="lede">{{ page.intro }}</p>{% endif %}
+</section>
+<div class="wrap">
+  {{ content }}
+</div>
