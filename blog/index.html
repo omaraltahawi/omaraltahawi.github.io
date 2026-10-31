@@ -1,0 +1,19 @@
+---
+layout: page
+title: Blog
+eyebrow: Writing
+heading: Notes from the workbench.
+heading_muted: On building, drawing and everything in between.
+intro: Occasional writing about engineering, design process and the overlap between the two.
+---
+{% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in by_year %}
+<section class="year-group">
+  <h2 class="year-label mono-meta">{{ year.name }}</h2>
+  <ul class="post-list">
+    {% for post in year.items %}{% include post-item.html post=post %}{% endfor %}
+  </ul>
+</section>
+{% else %}
+<p class="muted">No posts yet — check back soon.</p>
+{% endfor %}

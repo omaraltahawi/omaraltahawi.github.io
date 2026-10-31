@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-title">{{ site.title }}</p>
+      <p class="muted">{{ site.tagline }}{% if site.author.location %} · {{ site.author.location }}{% endif %}</p>
+    </div>
+    <ul class="footer-links">
+      {% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">Email</a></li>{% endif %}
+      {% for link in site.social %}<li><a href="{{ link.url }}" rel="me noopener" target="_blank">{{ link.name }}</a></li>{% endfor %}
+      <li><a href="{{ '/blog/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-base">
+    <p class="muted">© {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
+    <a class="muted" href="#top">Back to top ↑</a>
+  </div>
+</footer>
