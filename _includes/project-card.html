@@ -1,0 +1,23 @@
+{% assign p = include.project %}
+<article class="card project-card reveal" data-tags="{{ p.tags | join: ',' | downcase }}">
+  <a class="card-link" href="{{ p.url | relative_url }}">
+    {% if p.cover %}
+    <div class="card-media">
+      <img src="{{ p.cover | relative_url }}" alt="" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="card-body">
+      <p class="mono-meta">
+        <span>{{ include.index | prepend: '00' | slice: -2, 2 }}</span>
+        <span>{{ p.year }}</span>
+      </p>
+      <h3 class="card-title">{{ p.title }}</h3>
+      <p class="muted">{{ p.summary }}</p>
+      {% if p.tags %}
+      <ul class="badge-row">
+        {% for tag in p.tags %}<li class="badge">{{ tag }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </a>
+</article>

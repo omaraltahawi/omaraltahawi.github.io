@@ -1,0 +1,75 @@
+---
+layout: default
+title: Home
+accent: split
+---
+{% assign featured_projects = site.projects | where: "featured", true | sort: "year" | reverse %}
+{% assign featured_art = site.data.artwork | where: "featured", true %}
+
+<section class="hero wrap" data-hero>
+  <p class="eyebrow eyebrow-plain">{{ site.author.name }} — portfolio</p>
+  <h1 class="hero-split">
+    <a class="hero-half" href="{{ '/engineering/' | relative_url }}" data-side="teal">
+      <span class="hero-word">Engineer</span>
+      <span class="hero-hint">Projects, systems &amp; things that work →</span>
+    </a>
+    <span class="hero-amp" aria-hidden="true">&amp;</span>
+    <a class="hero-half" href="{{ '/design/' | relative_url }}" data-side="coral">
+      <span class="hero-word">designer<span class="hero-dot">.</span></span>
+      <span class="hero-hint">Graphics, illustration &amp; things that feel →</span>
+    </a>
+  </h1>
+  <p class="lede hero-lede">I build precise things by day and draw expressive things by night. This is where both live, side by side.</p>
+</section>
+
+<section class="section wrap" data-accent="teal">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">01 — Engineering</p>
+      <h2 class="display display-md">Selected projects <span class="display-muted">built with care.</span></h2>
+    </div>
+    <a class="btn btn-ghost" href="{{ '/engineering/' | relative_url }}">All projects</a>
+  </div>
+  <div class="grid grid-3">
+    {% for p in featured_projects limit: 3 %}{% include project-card.html project=p index=forloop.index %}{% endfor %}
+  </div>
+</section>
+
+<section class="section wrap" data-accent="coral">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">02 — Design</p>
+      <h2 class="display display-md">Graphics &amp; illustration <span class="display-muted">made for the joy of it.</span></h2>
+    </div>
+    <a class="btn btn-ghost" href="{{ '/design/' | relative_url }}">Full gallery</a>
+  </div>
+  <div class="masonry masonry-home" data-lightbox>
+    {% for art in featured_art limit: 6 %}{% include artwork-tile.html art=art %}{% endfor %}
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow">03 — Writing</p>
+      <h2 class="display display-md">Notes <span class="display-muted">from the workbench.</span></h2>
+    </div>
+    <a class="btn btn-ghost" href="{{ '/blog/' | relative_url }}">All posts</a>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts limit: 3 %}{% include post-item.html post=post %}{% endfor %}
+  </ul>
+</section>
+
+<section class="section wrap">
+  <div class="card about-teaser reveal">
+    <p class="eyebrow">04 — About</p>
+    <p class="display display-sm">Hi, I'm {{ site.author.name | split: " " | first }}. An engineer who never stopped drawing. <span class="display-muted">I like clear systems, quiet interfaces and bold shapes.</span></p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">More about me</a>
+      {% if site.author.email %}<a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Say hello</a>{% endif %}
+    </div>
+  </div>
+</section>
+
+{% include lightbox.html %}
