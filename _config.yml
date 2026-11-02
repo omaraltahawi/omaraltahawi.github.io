@@ -1,0 +1,70 @@
+# ─────────────────────────────────────────────────────────────
+#  Site settings — edit these to make the site yours.
+#  After changing this file, GitHub rebuilds the site in ~1 min.
+# ─────────────────────────────────────────────────────────────
+
+title: Omar Altahawi
+tagline: Engineer & designer
+description: >-
+  Portfolio of Omar Altahawi — engineering projects, graphic design,
+  and writing.
+url: "https://omaraltahawi.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Omar Altahawi
+  email: omaraltahawi03@gmail.com            # replace with your public email
+  location:          # replace with your city
+
+# Links shown in the footer and About page. Delete any you don't use.
+social:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/omar-altahawi1/
+
+# Main navigation
+nav:
+  - title: Engineering
+    url: /engineering/
+  - title: Design
+    url: /design/
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+
+# ── You normally don't need to touch anything below this line ──
+
+collections:
+  projects:
+    output: true
+    permalink: /engineering/:name/
+
+defaults:
+  - scope: { path: "", type: projects }
+    values: { layout: project }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: default }
+
+permalink: /blog/:year/:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: blog/feed.xml
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

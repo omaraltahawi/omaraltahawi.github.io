@@ -1,0 +1,256 @@
+# ─────────────────────────────────────────────────────────────
+#  Design gallery. One entry per artwork; order on the page comes from rank.
+#
+#  To add a piece:
+#   1. Upload the image to  assets/images/artwork/
+#   2. Copy one block below and change the values.
+#
+#  file:      the image file name (exactly as uploaded)
+#  title:     shown in the full-size viewer and read by screen readers
+#  year:      when you made it
+#  medium:    optional, e.g. "Illustrator", "Gouache on paper"
+#  category:  used for the filter buttons (e.g. Poster, Illustration, Branding)
+#  rank:      1-5. Higher ranks sit higher in the gallery.
+#             All 4s and 5s appear in the home page window (5s first); 1-3 never do.
+#             Posters shuffle within the same rank on every visit. Missing = 3.
+#  highlight: true = show the red "Highlight" badge on it
+# ─────────────────────────────────────────────────────────────
+
+- file: Aqeedah Class.png
+  title: Aqeedah Class 
+  year: 2025
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+  
+- file: Arabic Class.png
+  title: Arabic Class
+  year: 2025
+  medium: Promotional Material
+  category: Poster
+  rank: 2
+  highlight: 
+
+- file: Arafah Iftar.png
+  title: Iftar Sign up
+  year: 2025
+  medium: Promotional Material
+  category: Poster
+  rank: 4
+
+- file: Brothers Bowling.jpg
+  title: Brothers Bowling
+  year: 2025
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 3
+
+- file: Charity Week Calendar.jpg
+  title: Calendar of Events
+  year: 2025
+  medium: Informational Material part of campaign
+  category: Poster
+  rank: 2
+
+- file: Charity Week Football Tournament.png
+  title: Football Tournament
+  year: 2025
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 3
+
+- file: Eid ul-Adha.png
+  title: Eid ul-Adha
+  year: 2025
+  medium: Informational
+  category: Poster
+  rank: 3
+  highlight:
+
+- file: Fifa Tournament.png
+  title: Fifa Tournament Poster
+  year: 2025
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 3
+
+- file: Eid ul-Fitr.png
+  title: Eid Mubarak
+  year: 2025
+  medium: Informational
+  category: Poster
+  highlight: true
+  rank: 5
+
+- file: Fundraiser Football Tournament.jpg
+  title: Iftar Fundraising Football
+  year: 2025
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+
+- file: Ramadan Talk.png
+  title: The Ramadan Etiquettes
+  year: 2025
+  medium: Promotional Material
+  category: Poster
+  rank: 2
+
+- file: Sip & Paint.jpg
+  title: Sisters Sip & Paint
+  year: 2025
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 3
+
+- file: Sisters Games Night.png
+  title: Sisters Games Night
+  year: 2025
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 3
+
+- file: 1.png
+  title: Brothers Qur'an Tadabur Circle
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 5
+  highlight: true
+
+- file: Sisters Tadabur Circle.png
+  title: Sisters Qur'an Tadabur Circle
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 5
+  highlight: true
+
+- file: 2627Football Tournament.jpg
+  title: Charity Tournament
+  year: 2026
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 4
+
+- file: Balancing Uni & Deen.png
+  title: Balancing Uni & Deen
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+
+- file: Brothers games night.png
+  title: Brothers Games Night
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+
+- file: Callout for Volunteers.png
+  title: Volunteers Callout
+  year: 2026
+  medium: Promotional Material part of Campaign
+  category: Poster
+  rank: 2
+
+- file: Freshers Football.png
+  title: Friday Footy
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 2
+
+- file: Islamic Talk.png
+  title: Connecting Back to Eman
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+
+- file: New Jumu'ah Reminders.png
+  title: Jumu'ah Checklist
+  year: 2026
+  medium: Informational
+  category: Poster
+  rank: 3
+
+- file: Sisters Taco Event.png
+  title: Sisters Tacos & Chill
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 4
+
+- file: HoodieComp1.png
+  title: Hoodie Design Competition
+  year: 2026
+  medium: Promotional Material
+  category: Carousel
+  rank: 5
+  highlight: true
+
+- file: HoodieComp2.png
+  title: Hoodie Design Competition — Rules
+  year: 2026
+  medium: Informational
+  category: Carousel
+  rank: 5
+
+
+- file: Campustours1.jpg
+  title: Campus Tours
+  year: 2026
+  medium: Promotional Material
+  category: Carousel
+  rank: 3
+
+- file: Campustours2.jpg
+  title: Campus Tours — Route
+  year: 2026
+  medium: Informational
+  category: Carousel
+  rank: 3
+
+- file: 26-27Freshers Guide.jpg
+  title: Freshers Guide 26/27
+  year: 2026
+  medium: Informational
+  category: Carousel
+  rank: 3
+
+- file: TheQuietCollapse.jpg
+  title: The Quiet Collapse
+  year: 2026
+  medium: Promotional Material
+  category: Carousel
+  rank: 4
+
+- file: sgn2.png
+  title: Games Night
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 3
+
+- file: sgnv2.png
+  title: Games Night Variation 2
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 4
+
+- file: Misconceptions-cvr.png
+  title: Misconceptions
+  year: 2026
+  medium: Promotional Material
+  category: Carousel
+  rank: 4
+
+- file: Misconceptions-Carousel.png
+  title: Misconceptions Carousel
+  year: 2026
+  medium: Promotional Material
+  category: Poster
+  rank: 4
+

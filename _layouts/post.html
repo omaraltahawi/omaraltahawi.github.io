@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="wrap wrap-narrow">
+  <header class="post-header">
+    <a class="back-link" href="{{ '/blog/' | relative_url }}">← All writing</a>
+    <p class="mono-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% assign words = content | number_of_words %}
+      <span>{{ words | divided_by: 200 | plus: 1 }} min read</span>
+    </p>
+    <h1 class="display display-md">{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    {% if page.tags %}
+    <ul class="badge-row">{% for tag in page.tags %}<li class="badge">{{ tag }}</li>{% endfor %}</ul>
+    {% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+
+  {% if page.previous or page.next %}
+  <nav class="post-pager" aria-label="More posts">
+    {% if page.previous %}<a class="card" href="{{ page.previous.url | relative_url }}"><span class="mono-meta">← Older</span><span>{{ page.previous.title }}</span></a>{% endif %}
+    {% if page.next %}<a class="card pager-next" href="{{ page.next.url | relative_url }}"><span class="mono-meta">Newer →</span><span>{{ page.next.title }}</span></a>{% endif %}
+  </nav>
+  {% endif %}
+</article>

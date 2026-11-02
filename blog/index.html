@@ -1,0 +1,19 @@
+---
+layout: page
+title: Blog
+eyebrow: some thoughts.
+heading: Notes that made it out of the app
+heading_muted: On building, design, and what happened in the middle
+intro: shall this launch on substack too?
+---
+{% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in by_year %}
+<section class="year-group">
+  <h2 class="year-label mono-meta">{{ year.name }}</h2>
+  <ul class="post-list">
+    {% for post in year.items %}{% include post-item.html post=post %}{% endfor %}
+  </ul>
+</section>
+{% else %}
+<p class="muted">No posts yet — check back soon.</p>
+{% endfor %}

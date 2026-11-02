@@ -1,0 +1,10 @@
+{% assign art = include.art %}
+<figure class="art-tile reveal" data-tags="{{ art.category | downcase }}" data-rank="{{ art.rank | default: 3 }}">
+  <button class="art-open" type="button"
+    data-src="{{ art.file | prepend: '/assets/images/artwork/' | relative_url }}"
+    data-title="{{ art.title | escape }}"
+    data-meta="{{ art.year }}{% if art.medium %} · {{ art.medium | escape }}{% endif %}">
+    {% if art.highlight %}<span class="highlight-badge">Highlight</span>{% endif %}
+    <img src="{{ art.file | prepend: '/assets/images/artwork/' | relative_url }}" alt="{{ art.title | escape }}" loading="lazy">
+  </button>
+</figure>

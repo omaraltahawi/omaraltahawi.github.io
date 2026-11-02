@@ -1,0 +1,23 @@
+---
+layout: page
+title: Design.
+accent: design
+eyebrow: Design
+heading: Mostly Posters &amp; lots of colors.
+heading_muted: The side that contemplates the other side.
+intro: Posters, identities, and experiments. Click any piece to see it larger.
+---
+{% comment %} Highest rank first; main.js shuffles within each rank on every visit {% endcomment %}
+{% assign artwork = site.data.artwork | sort: "rank", "first" | reverse %}
+{% assign categories = artwork | map: "category" | uniq | sort %}
+
+<div class="filter-bar" role="group" aria-label="Filter artwork" data-filter-target="#art-grid">
+  <button class="filter-tab" type="button" data-filter="all" aria-pressed="true">All</button>
+  {% for c in categories %}<button class="filter-tab" type="button" data-filter="{{ c | downcase }}" aria-pressed="false">{{ c }}</button>{% endfor %}
+</div>
+
+<div class="masonry" id="art-grid" data-lightbox data-shuffle>
+  {% for art in artwork %}{% include artwork-tile.html art=art %}{% endfor %}
+</div>
+
+{% include lightbox.html %}
