@@ -232,7 +232,7 @@
   medium: Promotional Material
   category: Poster
   rank: 3
-
+  
 - file: sgnv2.png
   title: Games Night Variation 2
   year: 2026
@@ -254,3 +254,74 @@
   category: Poster
   rank: 4
 
+
+- file: C26-Flyer-Front.jpg
+  title: "Charity Week 2026 — Flyer"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26-Flyer-Back.jpg
+  title: "Charity Week 2026 — The Agenda"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Barber.png
+  title: "Charity Stall — Barber Special"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_hotones.png
+  title: "Brothers Hot Ones"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Hunt.png
+  title: "Sisters Scavenger Hunt"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Jumuah.png
+  title: "Jumu'ah Chai"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Shootout.png
+  title: "Brothers Shootout"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Sumo.png
+  title: "Brothers Sumo"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
+
+
+- file: C26_Calligraphy.png
+  title: "Sisters Calligraphy Workshop"
+  year: 2026
+  medium: Promotional Material part of Charity Week 2026 Campaign
+  category: Poster
+  rank: 5
