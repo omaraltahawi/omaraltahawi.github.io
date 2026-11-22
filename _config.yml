@@ -17,6 +17,10 @@ author:
   email: omaraltahawi03@gmail.com            # replace with your public email
   location:          # replace with your city
 
+# Private visitor stats (views, device, country) at https://<code>.goatcounter.com
+# Put your GoatCounter site code here, e.g. omaraltahawi. Leave blank to turn off.
+goatcounter: omzdata
+
 # Links shown in the footer and About page. Delete any you don't use.
 social:
   - name: LinkedIn
